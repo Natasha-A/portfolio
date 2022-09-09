@@ -25,7 +25,7 @@ import about04 from '../assets/about04.png';
 
 import profile from '../assets/profile.png';
 import circle from '../assets/circle.svg';
-import logo from '../assets/logo.png';
+import logo from '../assets/nLogo-v2.png';
 
 import adidas from '../assets/adidas.png';
 import amazon from '../assets/amazon.png';
@@ -34,6 +34,9 @@ import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
+import jumbotronimg from '../assets/natasha-jumbotron.png'
+import aboutprofile from '../assets/aboutprofile.png'
+
 
 export default {
   email,
@@ -69,4 +72,6 @@ export default {
   nb,
   skype,
   spotify,
+  jumbotronimg,
+  aboutprofile
 };

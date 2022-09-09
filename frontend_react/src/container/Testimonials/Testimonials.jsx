@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 import { motion } from 'framer-motion';
+import { images } from '../../constants';
 
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
@@ -30,31 +31,17 @@ const Testimonial = () => {
 
   return (
     <>
-      {testimonials.length && (
-        <>
-          <div className="app__testimonial-item app__flex">
-            <img src={urlFor(testimonials[currentIndex].imgurl)} alt={testimonials[currentIndex].name} />
-            <div className="app__testimonial-content">
-              <p className="p-text">{testimonials[currentIndex].feedback}</p>
-              <div>
-                <h4 className="bold-text">{testimonials[currentIndex].name}</h4>
-                <h5 className="p-text">{testimonials[currentIndex].company}</h5>
-              </div>
-            </div>
-          </div>
+     <h2 className="head-text">A little bit about <span>myself!</span></h2>
 
-          <div className="app__testimonial-btns app__flex">
-            <div className="app__flex" onClick={() => handleClick(currentIndex === 0 ? testimonials.length - 1 : currentIndex - 1)}>
-              <HiChevronLeft />
-            </div>
-
-            <div className="app__flex" onClick={() => handleClick(currentIndex === testimonials.length - 1 ? 0 : currentIndex + 1)}>
-              <HiChevronRight />
-            </div>
-          </div>
-        </>
-      )}
-
+    <div className="aboutme">
+    <div className="testimonial app__flex">
+      <div className="about-text">
+      Hello! My name is Natasha and I am a second year student studying Computer Programming & Analysis. So far, I have studied a diverse range of frontend and backend software technologies. This has  structured my ability to learn new technologies, and break down problems and solve them in large scale projects with confidence, as revealed through my portfolio. I have been programming and desiging since highschool, and ever since I have grown a love for the process of seeing an idea come to life. Additionally, for the past 2 years I have been working as a Coding and Robotics Instructor, teaching Web Development, Robotic Automation, and AI. This environment has fueled my love for collaborative learning, where I am eager to share my passion for technology with others! When I’m not coding or tinkering with open-source hardware, I enjoy painting, reading at the library, and playing soccer. Thanks for taking a look at my website! 
+      </div>
+      <div className="profile">
+        <img src={images.aboutprofile}/>
+      </div>
+    </div>
       <div className="app__testimonial-brands app__flex">
         {brands.map((brand) => (
           <motion.div
@@ -65,6 +52,7 @@ const Testimonial = () => {
             <img src={urlFor(brand.imgUrl)} alt={brand.name} />
           </motion.div>
         ))}
+      </div>
       </div>
     </>
   );

@@ -40,6 +40,7 @@ export const Navbar = () => {
         )
         }
       </div>
+     <a href=""><button class="app__navbar-button">RESUME</button></a>
     </nav>
   )
 }
