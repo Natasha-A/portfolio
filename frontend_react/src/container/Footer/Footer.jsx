@@ -68,8 +68,8 @@ const Footer = () => {
         </div>
       ) : (
         <div>
-          <h3 className="head-text">
-            Thank you for getting in touch!
+          <h3 className="head-text" style={{color: "#8bb8f6"}}>
+            Thank you for your message!
           </h3>
         </div>
       )}

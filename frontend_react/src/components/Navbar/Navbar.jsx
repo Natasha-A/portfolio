@@ -40,7 +40,7 @@ export const Navbar = () => {
         )
         }
       </div>
-     <a href=""><button class="app__navbar-button">RESUME</button></a>
+     <a href="https://drive.google.com/file/d/1OfzqLWmldlLwcrwuqXB4OIFA-osv4Tee/view?usp=sharing" target="_blank"><button class="app__navbar-button">RESUME</button></a>
     </nav>
   )
 }

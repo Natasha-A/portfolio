@@ -73,8 +73,21 @@
 
   }
 
-  @media screen and (max-width: 1600px) {
+  @media screen and (max-width: 1750px) {
     flex-direction: column;
+    :nth-child(1) {
+      order: 2
+    }
+
+    .profile img {
+      width: 400px;
+      padding: 1rem 0;
+
+    }
+
+      .about-text {
+        padding: 1rem 4rem;
+    }
 
   }
 
