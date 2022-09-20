@@ -1,3 +1,4 @@
 /node_modules
 /.pnp
 .pnp.js
+/backend_sanity/node_modules/es5-ext/reg-exp/#
