@@ -35,7 +35,7 @@ import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 import jumbotronimg from '../assets/natasha-jumbotron.png'
-import aboutprofile from '../assets/aboutprofile.png'
+import aboutprofile from '../assets/profile-img-circle.png'
 
 
 export default {
